@@ -6,3 +6,9 @@ var lengthOfLastWord = function (s) {
     }
   }
 };
+
+var lengthOfLastWord = function (s) {
+  let string = s.trim();
+  const array = string.split(' ');
+  return array[array.length - 1].length
+};
