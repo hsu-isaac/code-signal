@@ -8,5 +8,5 @@ var removeElement = function (nums, val) {
     }
   }
 
-  return writeIndex + 1;
+  return writeIndex;
 };
