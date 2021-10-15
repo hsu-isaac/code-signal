@@ -27,7 +27,6 @@ function sumOfReversed(arr) {
   return sum;
 }
 
-
 // first must reverse numbers
 // if digits begin with zero, remove from front and multiply number by 10
 // add reversed numbers
