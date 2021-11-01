@@ -1,0 +1,3 @@
+function isBeautifulString(input) {
+
+}
