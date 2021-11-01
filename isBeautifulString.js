@@ -9,3 +9,8 @@ function isBeautifulString(input) {
   }
   return true;
 }
+
+/*
+test cases
+
+*/
