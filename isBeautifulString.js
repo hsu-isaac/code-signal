@@ -12,5 +12,7 @@ function isBeautifulString(input) {
 
 /*
 test cases
-
+'bbbaacdafe' true
+'aabbb' false
+'bbc' false
 */
