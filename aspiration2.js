@@ -49,7 +49,38 @@ class DoubleSet {
     }
     this.set = inputFormatted
   }
+  // {1:2, 2:1}
   plus(first, second) {
-
+    let sumSet = {};
+    for (const key in first) {
+      sumSet[key] = first[key]
+    }
+    // {1:2, 2:1}
+    for (const key in second) {
+      if (sumSet[key]) {
+        sumSet[key] = sumSet[key] + second[key]
+        if (sumSet[key] > 2) {
+          sumSet[key] = 2;
+        }
+      } else {
+        sumSet[key] = second[key]
+      }
+    }
+    this.set = sumSet
+  }
+  minus(first, second) {
+    let difSet = {};
+    for (const key in first) {
+      difSet[key] = first[key]
+    }
+    for (const key in second) {
+      if (difSet[key]) {
+        difSet[key] = difSet[key] - second[key]
+        if (difSet[key] < 1) {
+          delete difSet[key]
+        }
+      }
+    }
+    this.set = difSet
   }
 }
