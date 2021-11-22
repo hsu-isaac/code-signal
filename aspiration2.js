@@ -41,5 +41,7 @@ class DoubleSet {
   constructor(input) {
     this.set = input
   }
-  plus
+  plus(first, second) {
+
+  }
 }
