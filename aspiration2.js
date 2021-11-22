@@ -37,9 +37,17 @@ their difference is
 
 {{1: 1}} */
 
+//[{1:2}, {2:1}]
+
 class DoubleSet {
   constructor(input) {
-    this.set = input
+    let inputFormatted = {}
+    for (let i = 0; i < input.length; i++) {
+      for (const key in input[i]) {
+        inputFormatted[key] = input[i][key]
+      }
+    }
+    this.set = inputFormatted
   }
   plus(first, second) {
 
