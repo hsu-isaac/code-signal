@@ -36,3 +36,10 @@ and doubleSetTwo has members
 their difference is
 
 {{1: 1}} */
+
+class DoubleSet {
+  constructor() {
+
+  }
+  plus
+}
