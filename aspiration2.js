@@ -39,7 +39,7 @@ their difference is
 
 class DoubleSet {
   constructor(input) {
-    this.set = {input}
+    this.set = input
   }
   plus
 }
