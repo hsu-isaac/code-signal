@@ -38,8 +38,8 @@ their difference is
 {{1: 1}} */
 
 class DoubleSet {
-  constructor() {
-
+  constructor(input) {
+    this.set = {input}
   }
   plus
 }
