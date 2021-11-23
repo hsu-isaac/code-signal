@@ -49,13 +49,11 @@ class DoubleSet {
     }
     this.set = inputFormatted
   }
-  // {1:2, 2:1}
   plus(first, second) {
     let sumSet = {};
     for (const key in first) {
       sumSet[key] = first[key]
     }
-    // {1:2, 2:1}
     for (const key in second) {
       if (sumSet[key]) {
         sumSet[key] = sumSet[key] + second[key]
@@ -68,6 +66,7 @@ class DoubleSet {
     }
     this.set = sumSet
   }
+
   minus(first, second) {
     let difSet = {};
     for (const key in first) {
@@ -82,5 +81,15 @@ class DoubleSet {
       }
     }
     this.set = difSet
+  }
+
+  output() {
+    let formattedOutput = [];
+    for (const key in this.set) {
+      let setItem = {};
+      setItem[key] = this.set[key]
+      formattedOutput.push(setItem)
+    }
+    return formattedOutput
   }
 }
