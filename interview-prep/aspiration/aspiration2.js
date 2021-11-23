@@ -54,14 +54,14 @@ class DoubleSet {
     for (const key in this.set) {
       sumSet[key] = this.set[key]
     }
-    for (const key in second) {
+    for (const key in second.set) {
       if (sumSet[key]) {
-        sumSet[key] = sumSet[key] + second[key]
+        sumSet[key] = sumSet[key] + second.set[key]
         if (sumSet[key] > 2) {
           sumSet[key] = 2;
         }
       } else {
-        sumSet[key] = second[key]
+        sumSet[key] = second.set[key]
       }
     }
     this.set = sumSet
@@ -72,9 +72,9 @@ class DoubleSet {
     for (const key in this.set) {
       difSet[key] = this.set[key]
     }
-    for (const key in second) {
+    for (const key in second.set) {
       if (difSet[key]) {
-        difSet[key] = difSet[key] - second[key]
+        difSet[key] = difSet[key] - second.set[key]
         if (difSet[key] < 1) {
           delete difSet[key]
         }
